@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthly</title>
+</head>
+<body>
+    <h1>{{employee.name}}</h1>
+    <h1>age of {{employee.age}}</h1>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/geeksforgeeks/">Geeks for Geeks</a></li>
+        <li><a href="/earthly/">Earthly</a></li>
+    </ul>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <h1 style="text-align: center;">Geeks for Geeks</h1>
+    <h1>length</h1>
+    <p>the Departments list is {{Departments}} and the length is  ==>{{Departments | length}}</p>
+
+    <h1>Add</h1>
+    <p> 10 years letter he will be  ==>{{employee.age | add:'10'}} </p>
+    <h1>addslashes</h1>
+    <p> lets add slashes to "I'm mamun"    ==>{{employee.intro | addslashes}} </p>
+    
+    <h1>capfirst</h1>
+    <p>{{problems.capfirst}} to ==> {{problems.capfirst | capfirst}} </p>
+    <h1>center</h1>
+    <p>{{problems.center}} to ==> {{problems.center | center:'100'}} </p>
+    <h1>date</h1>
+    <p>{{ problems.date }} to ==> {{ problems.date | date:" D d M Y" }}</p>
+    <h1>default</h1>
+    <p>{{ problems.default1 }} to ==> {{ problems.default1 | default:"nothing" }}</p>
+    <p>{{ problems.default }} to ==> {{ problems.default | default:"nothing" }}</p>
+
+    <h1>dictsort</h1>
+    <p>{{ problems.dictsort }} to ==> {{ problems.dictsort | dictsort:"name" }}</p>
+    <p>{{ problems.dictsort }} to ==> {{ problems.dictsort | dictsort:"age" }}</p>
+
+    <h1>divisibleby</h1>
+    <p>{{ problems.divisibleby }} to ==> {{ problems.divisibleby | divisibleby:"4" }}</p>
+
+
+    <h1>escape</h1>
+    <p>{{problems.escape }} to ==> {{ problems.escape | escape }}</p>
+    <p>{{ problems.escape }} to ==> {{ problems.escape | escape }}</p>
+
+
+
+    <h1>File Size Formatting</h1>
+    <p>{{problems.filesizeformat }}to ==> {{ problems.filesizeformat | filesizeformat }}</p>
+    
+    <h1>first</h1>
+    <p>{{problems.array  }} to ==> {{ problems.array | first }}</p>
+    <h1>join</h1>
+    <p>{{problems.array  }} to ==> {{ problems.array | join:" // " }}</p>
+
+    <h1>Last</h1>
+    <p>{{problems.array  }} to ==> {{ problems.array | last }}</p>
+
+    <h1>Length</h1>
+    <p>{{problems.array  }} to ==> {{ problems.array | length }}</p>
+
+    <h1>Line NUmbers</h1>
+    <p>{{problems.linenumbers }} to ==> {{ problems.linenumbers | linenumbers }}</p>
+    <h1>lower</h1>
+    <p>{{problems.linenumbers }} to ==> {{ problems.linenumbers | lower }}</p>
+    
+    <h1>upper</h1>
+    <p>{{problems.linenumbers }} to ==> {{ problems.linenumbers | upper }}</p>
+    
+    <h1>Word count</h1>
+    <p>{{problems.linenumbers }} to ==> {{ problems.linenumbers | wordcount }}</p>
+    
+    <h1>Word count</h1>
+    <p>{{problems.linenumbers }} to ==> {{ problems.linenumbers | unordered_list }}</p>
+    
+    <h1>Make_list</h1>
+    <p>{{ problems.line }} to ==> {{ problems.line | make_list }}</p>
+    <h1>random</h1>
+    <p>{{ problems.array }} to ==> {{ problems.array | random }}</p>
+
+    <h1>slice</h1>
+    <p>{{ problems.array }} to ==> {{ problems.array | slice:'2' }}</p>
+
+    <h1>slugify</h1>
+    <p>{{ problems.linenumbers }} to ==> {{ problems.linenumbers | slugify }}</p>
+
+    <h1>title</h1>
+    <p>{{ problems.line }} to ==> {{ problems.line | title }}</p>
+    <h1>time</h1>
+    <p>{{ problems.cu_date }} to ==> {{ problems.cu_date| time:"H:i" }}</p>
+    
+    <h1>Timesince Filter</h1>
+    <p>{{ problems.cu_date }} to ==> {{ problems.cu_date|timesince:problems.comment_date }}</p>
+
+</body>
+</html>

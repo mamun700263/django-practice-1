@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthly</title>
+</head>
+<body>
+    <h1>{{employee.name}}</h1>
+    <h1>age of {{employee.age}}</h1>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/geeksforgeeks/">Geeks for Geeks</a></li>
+        <li><a href="/earthly/">Earthly</a></li>
+    </ul>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h1 style="text-align: center;">Earthly</h1>
+    <h1>Join filter</h1>
+    <p>{{Earthly.array}} join filter {{Earthly.array | join:"==> "}} </p>
+    <h1>Date filter</h1>
+    <p>{{Earthly.date}} Date filter  ===>>{{Earthly.date | date:"D d M Y"}} </p>
+    <h1>Date Short filter</h1>
+    <p>{{Earthly.date}} SHORT_DATE_FORMAT filter  ===>>{{Earthly.date | date:"SHORT_DATE_FORMAT"}} </p>
+    
+    <h1>Date Short filter</h1>
+    <p>{{Earthly.date}} DATE filter  ===>>{{Earthly.date | date}} </p>
+    <h1>default filter</h1>
+    <p>{{Earthly.default}} defult filter  ===>>{{Earthly.default | default:"Kiso likhi nai"}} </p>
+    
+    <h1>add filter</h1>
+    <p>{{Earthly.num}} Add filter  ===>>{{Earthly.num | add:'6'}} </p>
+    
+    <h1>title filter</h1>
+    <p>{{Earthly.name}} title filter  ===>>{{Earthly.name | title}} </p>
+    
+    
+    <h1>cap first filter</h1>
+    <p>{{Earthly.name}} capfirst filter  ===>>{{Earthly.name | capfirst}} </p>
+    
+    <h1>cut filter</h1>
+    <p>{{Earthly.name}} cut filter  ===>>{{Earthly.name | cut:' '}} </p>
+    
+    <h1>Dictsort filter</h1>
+    <p>{{Earthly.students}} Dictsort filter  ===>>{{Earthly.students | dictsort:"id"}} </p>
+    
+    <h1>Escape filter</h1>
+    <p>{{Earthly.escape}} escape filter  ===>>{{Earthly.escape | escape}} </p>
+    
+    <h1>first filter</h1>
+    <p>{{Earthly.array}} first filter  ===>>{{Earthly.array | first}} </p>
+    
+    <h1>last filter</h1>
+    <p>{{Earthly.array}} last filter  ===>>{{Earthly.array | last}} </p>
+    
+    <h1>lengtht filter</h1>
+    <p>{{Earthly.array}} length filter  ===>>{{Earthly.array | length}} </p>
+    
+    
+    <h1>linenumbers filter</h1>
+    <p>{{Earthly.lines}} linenumbers filter  ===>>{{Earthly.lines | linenumbers}} </p>
+    
+    <h1>lower filter</h1>
+    <p>{{Earthly.lines}} lower filter  ===>>{{Earthly.lines | lower}} </p>
+    
+    
+    
+    <h1>upper filter</h1>
+    <p>{{Earthly.lines}} upperr filter  ===>>{{Earthly.lines | upper}} </p>
+    
+    <h1>random  filter</h1>
+    <p>{{Earthly.array}}random  filter  ===>>{{Earthly.array | random }} </p>
+    <h1>slice  filter</h1>
+    <p>{{Earthly.array}}slice  filter  ===>>{{Earthly.array | slice:":2" }} </p>
+    
+    <h1>slice  filter</h1>
+    <p>{{Earthly.array}}slice  filter  ===>>{{Earthly.array | slice:":2" }} </p>
+    
+    <h1>Time filter</h1>
+    <p>{{Earthly.time}} time  filter  ===>>{{Earthly.time | time:"H:i" }} </p>
+    
+    
+    <h1>truncatechars filter</h1>
+    <p>{{Earthly.name}} truncatechars  filter  ===>>{{Earthly.name | truncatechars:8 }} </p>
+    
+    
+    <h1>wordcount filter</h1>
+    <p>{{Earthly.name}} wordcount  filter  ===>>{{Earthly.name | wordcount }} </p>
+    
+    
+    <h1>truncatewords filter</h1>
+    <p>{{Earthly.name}} truncatewords  filter  ===>>{{Earthly.name | truncatewords:3 }} </p>
+    
+    
+    <h1>striptags filter</h1>
+    <p>{{Earthly.escape}} striptags  filter  ===>>{{Earthly.escape | striptags }} </p>
+    
+    
+    <h1>make_listfilter</h1>
+    <p>{{Earthly.lines}} make_list  filter  ===>>{{Earthly.lines | make_list }} </p>
+    
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+</body>
+</html>
